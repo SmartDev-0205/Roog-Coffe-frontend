@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a3a9569.css",
+    "main.js": "/static/js/main.0f5ee8cf.js",
+    "static/js/908.ab78a1aa.chunk.js": "/static/js/908.ab78a1aa.chunk.js",
+    "static/js/881.8ca55572.chunk.js": "/static/js/881.8ca55572.chunk.js",
+    "static/js/828.b3b6aff2.chunk.js": "/static/js/828.b3b6aff2.chunk.js",
+    "static/js/725.110983f0.chunk.js": "/static/js/725.110983f0.chunk.js",
+    "static/media/roog logo x20.png": "/static/media/roog logo x20.c5823202f37a9c93a4eb.png",
+    "index.html": "/index.html",
+    "main.2a3a9569.css.map": "/static/css/main.2a3a9569.css.map",
+    "main.0f5ee8cf.js.map": "/static/js/main.0f5ee8cf.js.map",
+    "908.ab78a1aa.chunk.js.map": "/static/js/908.ab78a1aa.chunk.js.map",
+    "881.8ca55572.chunk.js.map": "/static/js/881.8ca55572.chunk.js.map",
+    "828.b3b6aff2.chunk.js.map": "/static/js/828.b3b6aff2.chunk.js.map",
+    "725.110983f0.chunk.js.map": "/static/js/725.110983f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a3a9569.css",
+    "static/js/main.0f5ee8cf.js"
+  ]
+}
