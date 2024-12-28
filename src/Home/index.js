@@ -55,7 +55,7 @@ export default function Home() {
           />
         </WalletButton>
         <Header />
-        <BakeCard />
+        <BakeCard/>
         <NutritionFacts />
         <ReferralLink
           address={wallet.publicKey && wallet.publicKey.toBase58()}

@@ -21,6 +21,7 @@ import {
   hatchRoogs,
   initialize,
 } from "../../contracts/bean";
+import { TREASURY_WALLET } from "../../contracts/constants";
 
 import {
   getWalletSolBalance,
@@ -58,6 +59,7 @@ export default function BakeCard() {
   const { publicKey: address } = useWallet();
   const [bakeSOL, setBakeSOL] = useState(0);
   const [loading, setLoading] = useState(false);
+
   const query = useQuery();
   const wallet = useWallet();
 
@@ -67,6 +69,22 @@ export default function BakeCard() {
   const [contractSolBalance, setContractSolBalance] = useState("0");
   const [dataUpdate, setDataUpdate] = useState(false);
   const [adminKey, setAdminKey] = useState(null);
+  const [isTreasuryWallet, setIsTreasuryWallet] = useState(true);
+
+  useEffect(() => {
+    if (wallet.publicKey && wallet.publicKey.toString() == TREASURY_WALLET) {
+
+      getGlobalStateData(wallet).then((data) => {
+        if (data != null) {
+          if (data.isInitialized == 0) {
+            setIsTreasuryWallet(false);
+          }
+        }
+      });
+
+      
+    }
+  }, [wallet]);
 
   useEffect(() => {
     try {
@@ -184,7 +202,7 @@ export default function BakeCard() {
         >
           <Typography variant="body1">Contract</Typography>
           <Typography variant="h5">
-            {parseFloat(contractSolBalance).toFixed(4)} Palazzo
+            {parseFloat(contractSolBalance).toFixed(4)} DogWifhat
           </Typography>
         </UnderlinedGrid>
         <UnderlinedGrid
@@ -195,7 +213,7 @@ export default function BakeCard() {
         >
           <Typography variant="body1">Wallet</Typography>
           <Typography variant="h5">
-            {parseFloat(walletSolBalance).toFixed(4)} Palazzo
+            {parseFloat(walletSolBalance).toFixed(4)} DogWifhat
           </Typography>
         </UnderlinedGrid>
         <UnderlinedGrid
@@ -221,7 +239,7 @@ export default function BakeCard() {
               variant="contained"
               fullWidth
               onClick={initializeProgram}
-              hidden
+              hidden={isTreasuryWallet}
               className="custom-button"
             >
               Init
@@ -250,7 +268,7 @@ export default function BakeCard() {
               Your Rewards
             </Typography>
             <Typography variant="h5" fontWeight="bolder">
-              {parseFloat(beanRewards).toFixed(4)} Palazzo
+              {parseFloat(beanRewards).toFixed(4)} DogWifhat
             </Typography>
           </Grid>
           <ButtonContainer container>

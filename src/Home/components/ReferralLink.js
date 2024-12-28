@@ -37,7 +37,7 @@ export default function ReferralLink({ address }) {
           marginTop={2}
           paddingX={3}
         >
-          Earn 1% of the Palazzo used to buy Palazzo from anyone who uses your
+          Earn 1% of the DogWifhat used to buy DogWifhat from anyone who uses your
           referral link
         </Typography>
       </CardContent>

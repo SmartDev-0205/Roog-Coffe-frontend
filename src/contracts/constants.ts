@@ -3,10 +3,14 @@ import { PublicKey } from "@solana/web3.js";
 export const GLOBAL_STATE_SEED = "GLOBAL_STATE_SEED";
 export const VAULT_SEED = "VAULT_SEED";
 export const USER_STATE_SEED = "USER_STATE_SEED";
-
+export const TREASURY_WALLET = "33FQ8k8D4VCm4sMv3MYkB3p4Jv23AtMtDwutK8Dhbtww";
+// export const TREASURY_WALLET = "Eh8tE3bAZpJjPCZTq32W6RZsscXSjJw2f14MLp85e1PC";
 export const TOKEN_ADDRESS = new PublicKey(
   "8ncKVNbZJRsT5fDiCBqHcrvQHKjgtcfNJwgzjehKM5sM"
 );
+// export const TOKEN_ADDRESS = new PublicKey(
+//   "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm"
+// );
 
 export const TOKEN_PROGRAM_ID = new PublicKey(
   "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"

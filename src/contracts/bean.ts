@@ -34,25 +34,7 @@ const connection = new Connection(
 
 export const getProgram = (wallet: any) => {
 
-  // const secretKeyArray = [158,228,253,31,58,36,67,6,37,107,191,20,27,144,231,83,241,63,54,144,217,27,138,220,152,156,130,143,45,179,148,229,42,117,80,100,142,220,216,214,219,54,196,214,56,85,0,77,210,52,19,39,243,39,243,130,12,102,27,85,73,125,205,90,91,140];
 
-//  const secretKeyArray = [41,251,42,62,92,135,194,196,166,90,10,99,5,198,230,26,120,57,106,137,187,4,204,237,56,37,160,39,189,245,160,137,30,74,208,249,118,242,251,249,124,26,32,54,71,144,230,191,251,122,72,192,114,146,45,202,93,11,141,154,41,111,189,174];
-
-//   // Convert the array to a Uint8Array
-//   const secretKeyUint8Array = Uint8Array.from(secretKeyArray);
-//   console.log(secretKeyUint8Array,"***********************")
-//   // Initialize the Keypair from the secret key
-//   const keypair = Keypair.fromSecretKey(secretKeyUint8Array);
-  
-//   // Get the private key
-//   const privateKey = keypair.secretKey;
-//   console.log(privateKey);
-//   const privateKeyBase58 = bs58.encode(privateKey);
-//   console.log('Private Key (Base58):', privateKeyBase58);
-
-
-
-  
   let provider = new anchor.Provider(
     connection,
     wallet,

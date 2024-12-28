@@ -5,7 +5,7 @@ import { styled } from "@mui/system";
 const SolInput = styled("input")({
   fontSize: 24,
   fontWeight: 500,
-  padding: "12px 110px 12px 16px",
+  padding: "12px 80px 12px 16px",
   textAlign: "right",
   borderRadius: 0,
   border: "1px solid #555",
@@ -37,7 +37,7 @@ export default function PriceInput({ value, max, onChange = () => {} }) {
         fontWeight={500}
         color="black"
       >
-        Palazzo
+        WIF
       </Typography>
     </Box>
   );

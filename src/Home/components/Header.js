@@ -19,23 +19,23 @@ export default function Header() {
   return (
     <Wrapper>
       <img src={logo} alt="" width={"70%"} className="logo"/>
-      <Typography variant="h3">Palazzo Market</Typography>
+      <Typography variant="h3">SolFounder Market</Typography>
       <hr />
       <Typography variant="h7">
         <b>
-          50k (5% of supply) Palazzo to start the pool off, up to 1% daily return,
+          50k (5% of supply) DogWifhat to start the pool off, up to 1% daily return,
           1% referral.
           <br />
           HOW IT WORKS: <br />
-          Contract: This is the total amount of $Palazzo in the contract <br />
-          1. You buy shares with $Palazzo and gain a dynamic $Palazzo income for your
-          Palazzo. <br />
-          2. Bought Palazzo are added to the contract and the contract grows
+          Contract: This is the total amount of $DogWifhat in the contract <br />
+          1. You buy shares with $DogWifhat and gain a dynamic $DogWifhat income for your
+          DogWifhat. <br />
+          2. Bought DogWifhat are added to the contract and the contract grows
           <br />
           3. You can compound your rewards to gain more shares and increase your
           daily rewards. <br />
           4. You can withdraw your rewards at any time. <br />
-          5. You earn as long as there is $Palazzo in the contract. <br />
+          5. You earn as long as there is $DogWifhat in the contract. <br />
           You can use your refferal link to earn 1% off the deposit. <br />
         </b>
       </Typography>
@@ -46,7 +46,7 @@ export default function Header() {
         className="custom-button"
         href="https://jup.ag/swap/USDC-ROOG_8N3ZkCwRe36Cj1PqXaMw2h92yzSy18L1z6sptQMiQGrr"
       >
-        Buy $Palazzo
+        Buy $DogWifhat
       </Button>
     </Wrapper>
   );
