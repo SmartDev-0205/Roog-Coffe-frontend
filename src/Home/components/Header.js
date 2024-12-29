@@ -18,8 +18,8 @@ const Wrapper = styled("div")(({ theme }) => ({
 export default function Header() {
   return (
     <Wrapper>
-      <img src={logo} alt="" width={"70%"} className="logo"/>
-      <Typography variant="h3">SolFounder Market</Typography>
+      <img src={logo} alt="" width={"90%"} className="logo"/>
+      <Typography variant="h3">Sol Founder Wifhat</Typography>
       <hr />
       <Typography variant="h7">
         <b>
