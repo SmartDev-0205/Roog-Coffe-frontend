@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <Wrapper>
       <img src={logo} alt="" width={"90%"} className="logo"/>
-      <Typography variant="h3">Sol Founder Wifhat</Typography>
+      <Typography variant="h3">Sol Funder Wifhat</Typography>
       <hr />
       <Typography variant="h7">
         <b>
